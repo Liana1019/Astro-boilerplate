@@ -1,0 +1,16 @@
+.nav-item {
+    position: relative;
+}
+
+.nav-item img {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 10px;
+}
+
+.nav-item:hover img {
+    display: block;
+}
