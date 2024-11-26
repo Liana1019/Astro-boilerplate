@@ -1,3 +1,4 @@
+// @ts-ignore
 import {
   GradientText,
   HeroAvatar,
@@ -14,30 +15,36 @@ const Hero = () => (
           您好，欢迎光临 <GradientText>杭州jhzl设备有限公司</GradientText> 👋
         </>
       }
-
       description={
         <>
           <p>
             公司经营范围包括：{' '}
-            <a className="text-cyan-400 hover:underline" href="/">制冷、空调设备销售</a>{' '}；
-            <a className="text-cyan-400 hover:underline" href="/">货物进出口</a>{' '}；
-            <a className="text-cyan-400 hover:underline" href="/">家用电器零配件销售</a>{' '}；
-            机械零件、零部件销售；五金产品零售。
+            <a className="text-cyan-400 hover:underline" href="/">
+              制冷、空调设备销售
+            </a>{' '}
+            ；
+            <a className="text-cyan-400 hover:underline" href="/">
+              货物进出口
+            </a>{' '}
+            ；
+            <a className="text-cyan-400 hover:underline" href="/">
+              家用电器零配件销售
+            </a>{' '}
+            ； 机械零件、零部件销售；五金产品零售。
           </p>
 
-          <br/><br/>
+          <br />
+          <br />
 
           <p style={{ marginLeft: '2em' }}>
-            联系方式：<br />
-            王先生：18072745457<br/>
+            联系方式：
+            <br />
+            王先生：18072745457
+            <br />
             黄先生：18356097015
           </p>
         </>
       }
-
-
-
-
       avatar={
         <img
           className="h-80 w-64"

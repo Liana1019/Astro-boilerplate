@@ -8,7 +8,7 @@ import sentryLogo from '../../public/assets/images/sentry-white.png';
 import tursoLogo from '../../public/assets/images/turso.png';
 
 const Sponsors = () => (
-  <Section title="Sponsors">
+  <Section title="合作品牌">
     <table className="mx-auto border-collapse">
       <tbody>
         <tr className="h-56">
@@ -17,7 +17,7 @@ const Sponsors = () => (
               href="https://sentry.io/for/nextjs/?utm_source=github&utm_medium=paid-community&utm_campaign=general-fy25q1-nextjs&utm_content=github-banner-nextjsboilerplate-logo"
               target="_blank"
             >
-              <img src={sentryLogo.src} alt="Sentry" width={260} height={224} />
+              <img src={sentryLogo.src} alt="东贝" width={260} height={224} />
             </a>
           </td>
           <td className="border-2 border-gray-300 p-3">
@@ -27,7 +27,7 @@ const Sponsors = () => (
             >
               <img
                 src={betterStackLogo.src}
-                alt="Better Stack"
+                alt="万胜"
                 width={260}
                 height={224}
               />
@@ -35,12 +35,7 @@ const Sponsors = () => (
           </td>
           <td className="border-2 border-gray-300 p-3">
             <a href="https://nextlessjs.com">
-              <img
-                src={nextlessLogo.src}
-                alt="React SaaS Boilerplate Next.js"
-                width={260}
-                height={224}
-              />
+              <img src={nextlessLogo.src} alt="霓虹" width={260} height={224} />
             </a>
           </td>
         </tr>
