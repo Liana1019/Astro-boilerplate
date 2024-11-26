@@ -1,44 +1,73 @@
 import {
-  Logo,
-  NavbarTwoColumns,
-  NavMenu,
-  NavMenuItem,
-  Section,
+    Logo,
+    NavbarTwoColumns,
+    NavMenu,
+    NavMenuItem,
+    Section,
 } from 'astro-boilerplate-components';
 
-const Navbar = () => (
-  <Section>
-    <NavbarTwoColumns>
-      <a href="/">
-        <Logo
-          icon={
-            <svg
-              className="mr-1 h-10 w-10 stroke-cyan-600"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M0 0h24v24H0z" stroke="none"></path>
-              <rect x="3" y="12" width="6" height="8" rx="1"></rect>
-              <rect x="9" y="8" width="6" height="12" rx="1"></rect>
-              <rect x="15" y="4" width="6" height="16" rx="1"></rect>
-              <path d="M4 20h14"></path>
-            </svg>
-          }
-          name="杭州jhzl设备有限公司"
-        />
-      </a>
+const Navbar = () => {
+    return (
+        <Section>
+            <NavbarTwoColumns>
+                <a href="https://juhezhileng.gys.cn/">
+                    <Logo
+                        icon={
+                            <svg
+                                className="mr-1 h-10 w-10 stroke-cyan-600"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                strokeWidth="1.5"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            >
+                                <path d="M0 0h24v24H0z" stroke="none"></path>
+                                <rect x="3" y="12" width="6" height="8" rx="1"></rect>
+                                <rect x="9" y="8" width="6" height="12" rx="1"></rect>
+                                <rect x="15" y="4" width="6" height="16" rx="1"></rect>
+                                <path d="M4 20h14"></path>
+                            </svg>
+                        }
+                        name="杭州jhzl设备有限公司"
+                    />
+                </a>
 
-      <NavMenu>
-        {/*<NavMenuItem href="/posts/">Blogs</NavMenuItem>*/}
-        <NavMenuItem href="https://juhezhileng.gys.cn/">供应商网站</NavMenuItem>
-        <NavMenuItem href="/" >微信联系 </NavMenuItem>
-      </NavMenu>
-    </NavbarTwoColumns>
-  </Section>
-);
+                <NavMenu>
+                    {/* 微信联系 */}
+                    <NavMenuItem
+                        href="/"
+                        onMouseEnter={(e) => {
+                            const img = document.createElement('img');
+                            img.src = '/assets/images/WeChat.png'; // 确保路径正确
+                            img.alt = 'WeChat QR Code';
+                            img.style.position = 'absolute';
+                            img.style.left = '50%';
+                            img.style.top = '100%';
+                            img.style.transform = 'translateX(-50%)';
+                            img.style.marginTop = '8px';
+                            img.style.border = '1px solid #ccc';
+                            img.style.borderRadius = '5px';
+                            img.style.width = '160px';
+                            img.style.height = '160px';
+                            img.style.zIndex = '1000';
+                            img.id = 'wechat-img';
+                            e.target.appendChild(img);
+                        }}
+                        onMouseLeave={(e) => {
+                            const img = document.getElementById('wechat-img');
+                            if (img) e.target.removeChild(img);
+                        }}
+                    >
+                        微信联系
+                    </NavMenuItem>
+
+                    {/* 联系方式 */}
+                    <NavMenuItem href="/posts/my-contact-information/">联系方式</NavMenuItem>
+                </NavMenu>
+            </NavbarTwoColumns>
+        </Section>
+    );
+};
 
 export { Navbar };

@@ -36,7 +36,7 @@ const Hero = () => (
           <br />
           <br />
 
-          <p style={{ marginLeft: '2em' }}>
+          <p style={{ marginLeft: '1em' }}>
             联系方式：
             <br />
             王先生：18072745457
@@ -53,34 +53,34 @@ const Hero = () => (
           loading="lazy"
         />
       }
-      socialButtons={
-        <>
-          <a href="/">
-            <HeroSocial
-              src="/assets/images/twitter-icon.png"
-              alt="Twitter icon"
-            />
-          </a>
-          <a href="/">
-            <HeroSocial
-              src="/assets/images/facebook-icon.png"
-              alt="Facebook icon"
-            />
-          </a>
-          <a href="/">
-            <HeroSocial
-              src="/assets/images/linkedin-icon.png"
-              alt="Linkedin icon"
-            />
-          </a>
-          <a href="/">
-            <HeroSocial
-              src="/assets/images/youtube-icon.png"
-              alt="Youtube icon"
-            />
-          </a>
-        </>
-      }
+      // socialButtons={
+      //   <>
+      //     <a href="/">
+      //       <HeroSocial
+      //         src="/assets/images/twitter-icon.png"
+      //         alt="Twitter icon"
+      //       />
+      //     </a>
+      //     <a href="/">
+      //       <HeroSocial
+      //         src="/assets/images/facebook-icon.png"
+      //         alt="Facebook icon"
+      //       />
+      //     </a>
+      //     <a href="/">
+      //       <HeroSocial
+      //         src="/assets/images/linkedin-icon.png"
+      //         alt="Linkedin icon"
+      //       />
+      //     </a>
+      //     <a href="/">
+      //       <HeroSocial
+      //         src="/assets/images/youtube-icon.png"
+      //         alt="Youtube icon"
+      //       />
+      //     </a>
+      //   </>
+      // }
     />
   </Section>
 );
