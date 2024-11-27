@@ -81,6 +81,7 @@ const Hero = () => (
       //     </a>
       //   </>
       // }
+      socialButtons={[]}
     />
   </Section>
 );
