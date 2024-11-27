@@ -2,7 +2,7 @@
 import {
   GradientText,
   HeroAvatar,
-  HeroSocial,
+  // HeroSocial,
   Section,
 } from 'astro-boilerplate-components';
 
